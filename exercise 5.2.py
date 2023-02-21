@@ -15,5 +15,5 @@ answers = [
 
 
 print(f'Q: {questions[0]}\nA: {answers[1]}')
-print(f'Q: {questions[1]}\nA: {answers[0]}')
-print(f'Q: {questions[2]}\nA: {answers[2]}')
+print(f'Q: {questions[1]}\nA: {answers[2]}')
+print(f'Q: {questions[2]}\nA: {answers[0]}')
