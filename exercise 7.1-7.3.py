@@ -19,4 +19,11 @@ print(year_list)
 В какой год из списка years_list был ваш третий день рождения? Учтите,
 в первый год вам было 0 лет.
 """
-print(year_list[4])
+print(year_list[3])
+
+"""
+В какой год из списка years_list вам было больше всего лет?
+"""
+
+max_year = max(year_list)
+print(max_year)
