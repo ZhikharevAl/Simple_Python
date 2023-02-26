@@ -14,3 +14,9 @@ if 2018 <= year:
 
 year_list =[year for year in range(year, year + 6)]
 print(year_list)
+
+"""
+В какой год из списка years_list был ваш третий день рождения? Учтите,
+в первый год вам было 0 лет.
+"""
+print(year_list[4])
