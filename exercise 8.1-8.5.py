@@ -11,3 +11,11 @@
 
 
 e2f = {'dog': 'chein', 'cat': 'chat', 'walrus': 'morse'}
+print(e2f.get('walrus'))
+
+f2e = {v: k for k, v in e2f.items()}
+print(f2e)
+
+print(f2e.get('chein'))
+
+print(set(e2f))
