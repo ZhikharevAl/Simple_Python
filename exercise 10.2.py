@@ -10,9 +10,9 @@ class Element:
 
 element = Element()
 
-name = Element
-symbol = Element
-number = Element
+# name = Element
+# symbol = Element
+# number = Element
 
 element.name = 'Hydrogen'
 element.symbol = 'H'
