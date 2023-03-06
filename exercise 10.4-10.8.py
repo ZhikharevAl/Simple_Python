@@ -13,7 +13,7 @@ class Element:
         self.number = 1
 
     def dump(self):
-        #return self.name, self.symbol, self.number
+        # return self.name, self.symbol, self.number
         return f"{self.name} {self.symbol} {self.number}"
 
     def __str__(self):
@@ -53,3 +53,32 @@ print(hydrogen)
 
 hydrogen = Element()
 print(hydrogen.__str__())
+
+"""
+Модифицируйте класс Element, сделав атрибуты name, symbol и number приватными. 
+Определите свойство получателя для каждого атрибута, возвращающее
+его значение.
+"""
+
+
+class Element:
+    def __init__(self):
+        self.__name = 'Hydrogen'
+        self.__symbol = 'H'
+        self.__number = 1
+
+    @property
+    def name(self):
+        return self.__name
+
+    @property
+    def symbol(self):
+        return self.__symbol
+
+    @property
+    def number(self):
+        return self.__number
+
+
+hydrogen = Element()
+print(f'name = {hydrogen.name},\nsymbol = {hydrogen.symbol},\nnumber = {hydrogen.number}')
