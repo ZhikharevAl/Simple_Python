@@ -16,6 +16,10 @@ class Element:
         #return self.name, self.symbol, self.number
         return f"{self.name} {self.symbol} {self.number}"
 
+    def __str__(self):
+        return f"{self.name} {self.symbol} {self.number}"
+
+
 element = Element()
 
 print(element.name, element.symbol, element.number)
@@ -41,5 +45,11 @@ hydrogen из этого нового определения и использу
 print(hydrogen.dump())
 
 """
-
+Вызовите функцию print(hydrogen). В определении класса Element измените
+имя метода dump на __str__, создайте новый объект hydrogen и затем снова вызовите метод print(hydrogen).
 """
+
+print(hydrogen)
+
+hydrogen = Element()
+print(hydrogen.__str__())
