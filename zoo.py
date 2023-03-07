@@ -6,10 +6,33 @@ hours().
 """
 
 import zoo
+import zoo as menagerie
+from zoo import hours
+from zoo import hours as info
 
 
-def hour():
+def hours():
     return f'Open -5 9daily'
 
 
-zoo.hour()
+zoo.hours()
+
+"""
+В интерактивном интерпретаторе импортируйте модуль zoo под именем
+menagerie и вызовите его функцию hours().
+"""
+
+menagerie.hours()
+
+"""
+Оставаясь в интерпретаторе, импортируйте непосредственно функцию hours()
+из модуля zoo и вызовите ее.
+"""
+
+hours()
+
+"""
+Импортируйте функцию hours() под именем info и вызовите ее.
+"""
+
+info()
