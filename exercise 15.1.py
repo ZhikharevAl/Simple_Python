@@ -9,7 +9,7 @@ import time
 import os
 
 
-def whoami(what):
+def whoami(what) -> String:
     print("Process %s says: %s" % (os.getpid(), what))
     os.system('date –u')
 
